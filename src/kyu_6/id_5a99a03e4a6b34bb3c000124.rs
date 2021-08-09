@@ -46,5 +46,4 @@ mod tests {
         assert_eq!(num_primorial(8), 9699690);
         assert_eq!(num_primorial(9), 223092870);
     }
-
 }
