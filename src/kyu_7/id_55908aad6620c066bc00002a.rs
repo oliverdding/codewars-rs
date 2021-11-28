@@ -1,4 +1,4 @@
-fn xo(string: &'static str) -> bool {
+pub fn xo(string: &'static str) -> bool {
     string.matches(|c| {
         c == 'o' || c == 'O'
     }).count() == string.matches(|c| {

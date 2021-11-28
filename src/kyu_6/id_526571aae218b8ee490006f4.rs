@@ -1,4 +1,4 @@
-fn count_bits(n: u64) -> u32 {
+pub fn count_bits(n: u64) -> u32 {
     n.count_ones()
 }
 

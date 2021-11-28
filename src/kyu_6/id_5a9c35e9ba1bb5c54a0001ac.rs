@@ -51,7 +51,7 @@
 //     result as i32
 // }
 
-fn add(mut x: i32, mut y: i32) -> i32 {
+pub fn add(mut x: i32, mut y: i32) -> i32 {
     while y != 0 {
         let carry = x & y;
         x = x ^ y;

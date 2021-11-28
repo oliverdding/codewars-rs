@@ -1,4 +1,4 @@
-fn special_number(n: u64) -> String {
+pub fn special_number(n: u64) -> String {
     match format!("{}", n)
         .chars()
         .all(|c| c.to_digit(10).unwrap() <= 5) {

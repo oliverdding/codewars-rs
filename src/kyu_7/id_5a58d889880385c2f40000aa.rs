@@ -8,7 +8,7 @@
 //     }
 // }
 
-fn automorphic(n: u64) -> String {
+pub fn automorphic(n: u64) -> String {
     match n.pow(2).to_string().ends_with(&n.to_string()) {
         true => String::from("Automorphic"),
         false => String::from("Not!!"),

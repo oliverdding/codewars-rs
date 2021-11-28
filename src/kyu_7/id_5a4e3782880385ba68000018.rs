@@ -1,4 +1,4 @@
-fn balanced_num(n: u64) -> String {
+pub fn balanced_num(n: u64) -> String {
     let number = n.to_string();
     let number = number.as_bytes();
     let length = number.len();

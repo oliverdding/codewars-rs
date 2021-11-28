@@ -1,4 +1,4 @@
-fn count_duplicates(text: &str) -> u32 {
+pub fn count_duplicates(text: &str) -> u32 {
     let mut occ_alphabets = [0; 26];
     let mut occ_numeric = [0; 10];
 

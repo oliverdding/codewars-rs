@@ -1,4 +1,4 @@
-fn is_prime(n: usize) -> bool {
+pub fn is_prime(n: usize) -> bool {
     if n <= 1 {
         return false;
     }
@@ -11,7 +11,7 @@ fn is_prime(n: usize) -> bool {
     return true;
 }
 
-fn num_primorial(mut n: usize) -> u64 {
+pub fn num_primorial(mut n: usize) -> u64 {
     let mut result = 2_u64;
     let mut i = 3;
     while n > 1 {

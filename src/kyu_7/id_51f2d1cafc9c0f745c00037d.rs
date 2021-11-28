@@ -1,4 +1,4 @@
-fn solution(word: &str, ending: &str) -> bool {
+pub fn solution(word: &str, ending: &str) -> bool {
     word.ends_with(ending)
 }
 

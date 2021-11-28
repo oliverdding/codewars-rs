@@ -1,4 +1,4 @@
-fn disarium_number(n: u32) -> String {
+pub fn disarium_number(n: u32) -> String {
     let n_str = n.to_string();
     match n_str.as_bytes().iter()
         .enumerate()

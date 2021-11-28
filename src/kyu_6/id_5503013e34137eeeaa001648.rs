@@ -21,7 +21,7 @@
 //     }
 // }
 
-fn print(n: i32) -> Option<String> {
+pub fn print(n: i32) -> Option<String> {
     match n.is_positive() && (n & 1 == 1) {
         true => Some((1..=(n as usize))
             .chain((1..(n as usize)).rev())

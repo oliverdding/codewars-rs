@@ -1,6 +1,6 @@
 static DEC: [u64; 10] = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880];
 
-fn strong(n: u64) -> String {
+pub fn strong(n: u64) -> String {
     let n_str = n.to_string();
     match n_str.as_bytes().iter().map(|&i| DEC[(i - ('0' as u8)) as usize]).sum::<u64>() == n {
         true => String::from("STRONG!!!!"),

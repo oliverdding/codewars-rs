@@ -1,4 +1,4 @@
-fn delete_nth(lst: &[u8], n: usize) -> Vec<u8> {
+pub fn delete_nth(lst: &[u8], n: usize) -> Vec<u8> {
     let mut occurrencces = [0; u8::MAX as usize + 1];
     lst.iter().cloned().filter(|i| {
         occurrencces[*i as usize] += 1;

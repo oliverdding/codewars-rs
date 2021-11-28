@@ -1,4 +1,4 @@
-fn disemvowel(s: &str) -> String {
+pub fn disemvowel(s: &str) -> String {
     s.replace(&['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'][..], "")
 }
 

@@ -1,4 +1,4 @@
-fn solution(s: &str) -> String {
+pub fn solution(s: &str) -> String {
     s.chars().map(|v| {
         match v >= 'A' && v <= 'Z' {
             true => format!(" {}", v),

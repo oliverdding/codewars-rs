@@ -15,7 +15,7 @@
 //     return result;
 // }
 
-fn jumping_number(n: u64) -> String {
+pub fn jumping_number(n: u64) -> String {
     let is_jumping = format!("{}", n)
         .chars()
         .map(|x| (x as u8 - '0' as u8) as i8)

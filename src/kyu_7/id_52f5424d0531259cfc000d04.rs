@@ -1,6 +1,6 @@
 use std::ops::{BitOr, Shl};
 
-fn sort_by_bit(list: &[u8]) -> u32 {
+pub fn sort_by_bit(list: &[u8]) -> u32 {
     list.iter().fold(0_u32, |acc, &idx| acc.bitor(1_u32.shl(idx)))
 }
 
